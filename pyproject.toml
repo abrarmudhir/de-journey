@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "de-journey"
+version = "0.1.0"
+description = ""
+authors = ["Abrar Mudhir <abrarmudhir@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -31,3 +31,30 @@ cd de-journey
     ```sh
     poetry run pytest
     ```
+  
+## Run Locally with Docker
+
+1. Navigate to the server directory:
+   ```sh
+   cd server
+   ```
+
+2. Build the Docker image:
+   ```sh
+   docker-compose -f docker-compose.yml build
+   ```
+
+3. Start the Docker containers:
+   ```sh
+   docker-compose up -d
+   ```
+
+4. View logs:
+   ```sh
+   docker-compose logs -f --tail=200
+   ```
+
+5. Rebuild if needed:
+   ```sh
+   docker-compose up --build
+   ```

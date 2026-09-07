@@ -31,6 +31,21 @@ cd de-journey
     ```sh
     uv run pytest
     ```
+
+### Formatting Python Code
+
+Format all Python files in the project:
+
+```sh
+uv run black .
+```
+
+Install the Git pre-commit hook once after cloning. It runs Black automatically
+against staged Python files whenever you commit:
+
+```sh
+uv run pre-commit install
+```
   
 ## Run Locally with Docker
 

@@ -11,7 +11,7 @@
 ### Prerequisites
 
 - Docker
-- Poetry (for Python)
+- [uv](https://docs.astral.sh/uv/) (for Python)
 
 ### Clone the Repository
 
@@ -23,13 +23,13 @@ cd de-journey
 ### Install Dependencies
 - **Python**:
   ```sh
-  poetry install
+  uv sync
   ```
   
 ### Running Tests
 - **Python**:
     ```sh
-    poetry run pytest
+    uv run pytest
     ```
   
 ## Run Locally with Docker

@@ -11,7 +11,7 @@
 ### Prerequisites
 
 - Docker
-- Poetry (for Python)
+- [uv](https://docs.astral.sh/uv/) (for Python)
 
 ### Clone the Repository
 
@@ -23,14 +23,29 @@ cd de-journey
 ### Install Dependencies
 - **Python**:
   ```sh
-  poetry install
+  uv sync
   ```
   
 ### Running Tests
 - **Python**:
     ```sh
-    poetry run pytest
+    uv run pytest
     ```
+
+### Formatting Python Code
+
+Format all Python files in the project:
+
+```sh
+uv run black .
+```
+
+Install the Git pre-commit hook once after cloning. It runs Black automatically
+against staged Python files whenever you commit:
+
+```sh
+uv run pre-commit install
+```
   
 ## Run Locally with Docker
 

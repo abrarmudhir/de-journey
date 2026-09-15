@@ -1,0 +1,2 @@
+CREATE STAGE harbr_stage
+    DIRECTORY = (ENABLE = TRUE);

@@ -1,7 +1,7 @@
--- Create or replace a standalone task
+-- Create or replace a standalone tasks
 CREATE OR REPLACE TASK transform_delivery_summary
 
-    -- Warehouse used to run the task
+    -- Warehouse used to run the tasks
     WAREHOUSE = harbr_wh
 
     -- Run at 5 minutes past every hour, in UTC

@@ -1,0 +1,7 @@
+{
+    "user": "admin",
+    "account": "kvjsksa-rq47738",
+    "url": "https://kvjsksa-rq47738.snowflakecomputing.com:443",
+    "private_key_file": "rsa_key.p8",
+    "role": "accountadmin"
+}
